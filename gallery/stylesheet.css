@@ -1,3 +1,7 @@
+body{
+    background-color: white;
+    
+}
 .main_box {
     height: 30vw;
     width: 50vw;
@@ -457,7 +461,6 @@ img.hover-shadow {
 
 /*
 .modal {
-
     position: fixed;
     z-index: 1;
     margin: auto;
@@ -468,15 +471,12 @@ img.hover-shadow {
     height: 100%;
     overflow: auto;
 }
-
 .modal-content {
     position: relative;
     margin: auto;
     width: 90%;
     max-width: 700px;
 }
-
-
 .cursor {
     cursor: pointer
 }
@@ -503,7 +503,6 @@ img.hover-shadow {
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
