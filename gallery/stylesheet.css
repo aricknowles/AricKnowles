@@ -2,38 +2,134 @@ body{
     background-color: white;
     
 }
-.main_box {
-    height: 30vw;
-    width: 50vw;
-    float: left;
-    margin: 40px;
-    animation: fadein .5s ease-in;
-    -webkit-animation: fadein .5s ease-in;
+body {
+    font-family: AppleGothic, sans-serif;
+    margin: 0;
 
 }
 
+.contain,
+.contain2
+{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.main_box {
+    animation: fadein .5s ease-in;
+    -webkit-animation: fadein .5s ease-in;
+}
 .main_box2 {
     width: 50vw;
-    float: left;
-    margin: 40px;
+/*    float: left;*/
+    margin: auto;
     animation: fadein .5s ease-in;
     -webkit-animation: fadein .5s ease-in;
-
 }
 .main_box3 {
-    width: 22vw;
     animation: fadein .5s ease-in;
     -webkit-animation: fadein .5s ease-in;
-    z-index: -9000;
-float: right;
-margin: 40px;}
+    z-index: -9000; 
+    margin: auto;
+}
+.main_box4 {
+    animation: fadein .5s ease-in;
+    -webkit-animation: fadein .5s ease-in;
+    z-index: -9000; 
+    margin: auto;
+}
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+.contain {  flex-direction: column;
+    padding-top: 3vw; 
+    }
+.contain2 { flex-direction: column-reverse;
+        padding-top: 3vw; 
+
+    }
+.text_box p{
+    font-size: 2vw;
+    }
+
+.text_box2 h1{
+    font-size: 5vw;
+}
+
+.text_box2 h2{
+    line-height: 1vw;
+    font-size: 4vw;
+}
+.main_box3{
+    width: 60%;
+    }
+.column,
+    {
+display: flex;
+margin: auto;
+justify-content: center;
+}
+.column img {
+height: 15vw;
+padding-left: 3px;
+padding-right: 3px;
+}
+}
+      @media only screen and (min-width: 768px) {
+          /* For desktop: */
+.contain,
+.contain2
+          {  
+    flex-direction: row; 
+    padding: 3vw;
+    }  
+.column img{
+    height: 8vw;
+    padding-left: 3px;
+    padding-right: 3px;
+
+}
+.text_box {
+    }
+
+.main_box
+    {width: 400%;
+    }
+.main_box2 {
+	width: 200vw;
+
+    }
+.main_box3{
+    width: 40vw;
+    }
+.text_box p,
+.text_box2 p {
+    font-size: 1.7vw;
+    min-width: 30vw
+    }
+.text_box2 h1{
+    font-size: 3vw;
+}
+
+.text_box2 h2{
+    font-size: 2vw;
+}
+
+.column {
+display: flex;
+margin-left: 2vw;
+}
+.text_box2 {
+height: 30vw;
+width: 40vw;
+
+}
+}
 
 .text_box {
-    height: 30vw;
-    width: 40vw;
-    float: right; 
-    margin-right: 40px;
+    margin: auto;
+    margin-top: 0;
     animation: fadein .5s ease-in;
     -webkit-animation: fadein 1.5s ease-in;
 }
@@ -42,12 +138,10 @@ margin: 40px;}
 }
 
 .text_box2 {
-    height: 30vw;
-    width: 40vw;
-    margin-right: 20vw;
+    margin: auto;
     animation: fadein .5s ease-in;
     -webkit-animation: fadein 1.5s ease-in;
-float: right;}
+   }
 
 @-webkit-keyframes fadein {
     0% {opacity: 0;}
@@ -61,35 +155,22 @@ float: right;}
 
 .text_box p,
 .text_box2 p{
-	    font-family: AppleGothic, sans-serif;
-    font-size: 1.7vw;
+    font-family: AppleGothic, sans-serif;
     margin: 2vw;
-        text-align: justify;
+    text-align: justify;
 }
 
 .text_box h1,
 .text_box2 h1{
     font-family: AppleGothic, sans-serif;
-    font-size: 3vw;
     text-align: center;
 }
 .text_box h2,
 .text_box2 h2{
     font-family: AppleGothic, sans-serif;
-    font-size: 2vw;
     letter-spacing: .4vw;
     text-align: center;
 }
-.contcont {
-	display: inline-block;
-    width: 100%;
-}
-body {
-    font-family: AppleGothic, sans-serif;
-    margin: 0;
-
-}
-
 .back a{
     text-decoration: none;
     color: black;
@@ -101,7 +182,7 @@ body {
     margin: 1vw;
     position: fixed;
     transition: all 0.3s ease-in-out;
-    opacity: .1;
+    opacity: .5;
 
     
 }
@@ -109,7 +190,6 @@ body {
 .back a:hover {
     opacity: 1;
 }
-
 .bar {
         text-align: center;
         max-width: 1200px;
@@ -260,15 +340,9 @@ cursor: default;
     clear: both;
 }
 .column {
-    overflow: hidden;
-    float: left;
-    display: inline-block;
-    margin-left: 20px;
-    }
-.column img {
-height: 150px;
-
+display: flex;
 }
+
 .fill {
     display: flex;
     justify-content: center;
@@ -334,8 +408,6 @@ opacity: .7;}
 }
 
 .modal {
-    width: 50vw;
-    float: left;
     animation: fadein .5s ease-in;
     -webkit-animation: fadein .5s ease-in;
 

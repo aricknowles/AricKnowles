@@ -143,6 +143,9 @@ h2 {
 
 .ham_container {
     float: right;
+    position: absolute;
+    right: 0px;
+
 
 }
 
@@ -190,6 +193,8 @@ margin-right: 3vh;}
     width: 25vw;
     border-width:3vh;
     z-index: 10000;
+    position: absolute;
+    right: 0px;
 
     
 }
@@ -200,7 +205,8 @@ margin-right: 3vh;}
     border-color: aqua;
     border-style: solid;
     transition: all 0.5s ease-in-out;
-    z-index: 10000;    background-color:rgba(104,186,220,0.5);
+    z-index: 10000;    
+    background-color:rgba(104,186,220,0.5);
 
 }
 .a_container {
